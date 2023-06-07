@@ -2,20 +2,20 @@
   text-align: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 header {
   margin: 0 auto;
   display: flex;
   justify-items: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing : 2px ;
+  font-size: 28px;
 }
 
-header div {
-  display: flex;
-  gap: 1rem;
-}
-
-header input, button {
+header input{
   position : relative ;
   z-index : 0 ;
   width : 12rem ;
@@ -25,14 +25,17 @@ header input, button {
   font-size : 14px ; 
   font-weight : bold ;
   letter-spacing : 2px ;
-  transition: 0.5s ease;
-}
-header button {
-  width : 5rem ;
+  top: -13px
 }
 
-button:hover{
-  background: #777;
-  cursor: pointer;
-}
 
+.monsters-div{
+  display: flex;
+  justify-items: center;
+  align-items: baseline;
+  width: 100%;
+  font-style: italic;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 30rem;
+}
