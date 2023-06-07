@@ -1,7 +1,7 @@
 import "./App.css";
 import { Component } from "react";
 import CardList from "./components/card-list/card-list.jsx";
-import SearchBox  from "./components/search-box/search-box.jsx";
+import SearchBox from "./components/search-box/search-box.jsx";
 class App extends Component {
   constructor() {
     super();
@@ -38,13 +38,15 @@ class App extends Component {
 
     return (
       <div>
-        <header className="header">
-          <h1>Monster app</h1>
-          <SearchBox onChangeHandler={onSearchChange}/>
-          <CardList
-            monsters={filteredMonster}
+        <header className="header mt-[2rem]">
+          <h1 className="text-[3rem] font-bold">Monster Roledex 👾</h1>
+          <div className="h-[0.2rem] w-[30rem] bg-[#363636] rounded mx-[auto] transform -translate-y-1  min450:hidden"></div>
+          <SearchBox
+            onChangeHandler={onSearchChange}
+            placeholder="Find your monster"
           />
         </header>
+        <CardList monsters={filteredMonster} />
       </div>
     );
   }

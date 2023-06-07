@@ -1,0 +1,12 @@
+.search-box{
+    position : relative ;
+    z-index : 0 ;
+    width : 12rem ;
+    text-align: center;
+    height: 2.5rem;
+    text-decoration : none ;
+    font-size : 14px ; 
+    font-weight : bold ;
+    letter-spacing : 2px ;
+    top: -13px
+  }
